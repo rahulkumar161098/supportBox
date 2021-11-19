@@ -1,0 +1,248 @@
+*{
+  margin :0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  padding: 30px 30px;
+}
+.contain{
+  width:100%
+}
+
+header{
+  height: 90vh;
+  clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+  margin-top: 30px 0;
+  /* background-color: aquamarine; */
+  background-image: linear-gradient(to right bottom, rgba(223, 149, 149, .5), rgba(230, 230, 122, .5)),
+  url(../img/pexels-startup-stock-photos-7112.jpg);
+  background-size: 100%;
+  /* background-repeat: no-repeat; */
+  position: relative;
+
+}
+.logo{
+  height: 60px;
+  width: 60px;
+  /* border: 1px solid red; */
+  border-radius: 10px;
+  position: relative;
+  top: 15px;
+  left: 20px;
+  z-index: 10;
+}
+.logo img{
+  height: 60px;
+  width: 60px;
+  color: white;
+}
+.searchArea{
+  position: relative;
+  /* border: 1px solid red; */
+}
+.searchBox{
+  width:80%;
+  height: 40px;
+  border-radius: 20px;
+  /* background: none; */
+  border: none;
+  border-bottom: 1px solid #707070;
+  padding-left: 10px;
+  padding-right: 35px;
+  color: #707070;
+}
+.searchArea .searchIcon{
+  font-size: 20px;
+  color: #ececec;
+  position: absolute;
+  right: 12%;
+  top: 3px;
+  background: none;
+  border: none;
+}
+.headingTextBox{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+
+}
+.primaryHeading{
+  text-transform: uppercase;
+  color: white;
+  -webkit-backface-visibility: hidden;
+  margin-bottom: 50px;
+}
+.primaryMain{
+  color: #fff;
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: 15px;
+  display: block;
+  animation-name: headingMain;
+  animation-duration: 2s;
+}
+@keyframes headingMain{
+  0%{
+      opacity: 0;
+      transform: translateX(80px)
+  }
+  80%{
+      transform: translateX(-10px)
+  }
+  100%{
+      opacity: 1;
+      transform: translate(0) 
+  }
+}
+.secondaryMain{
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 12px;
+  font-weight: 700;
+  animation-name: headingSecondary;
+  animation-duration: 2s;
+}
+@keyframes headingSecondary{
+  0%{
+      opacity: 0;
+      transform: translateX(-80px)
+  }
+  80%{
+      transform: translateX(10px)
+  }
+  100%{
+      opacity: 1;
+      transform: translate(0) 
+  }
+}
+.codeBtn{
+  width: 30%;
+  background-color: #fff;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #707070;
+  border-radius: 50px;
+  text-decoration: none;
+  animation-name: btnAnim;
+  animation-duration: 3s;
+}
+a:hover{
+  color: #707070;
+}
+@keyframes btnAnim{
+  0%{
+      opacity: 0;
+      transform: translateY(-50px)
+  }
+  100%{
+      opacity: 1;
+      transform: translate(0) 
+  }
+}
+.cardSection{
+  background-color: #f7f4f4;
+  padding-top: 150px;
+  margin-top: -165px;
+}
+.cardSectionHeading{
+  text-transform: uppercase;
+  text-align: center;
+
+}
+span{
+  font-size: 35px;
+  font-weight: 600;
+  letter-spacing: 5px;
+  background-image: linear-gradient(to right bottom, rgb(223, 149, 149), rgb(230, 230, 122));
+  -webkit-background-clip: text;
+  color: transparent;
+  text-align: center;
+  transition: all .2s;
+  display: inline-block;
+  margin-bottom: 30px;
+
+}
+.cardSectionHeading :hover{
+  transform: skewY(2deg) skewX(10deg) scale(1.1) ;
+  text-shadow: .5rem 1rem 2rem rgba(black, .5);
+}
+.footer1{
+  /* margin-top: 50px; */
+  margin-top: 50px;
+  background-image: linear-gradient(to right bottom, rgba(255, 0, 0, 0.466), rgba(255, 255, 0, 0.459));
+}
+.footerTextAlign{
+  text-align: center;
+  color: #707070;
+}
+.footerTextAlign i{
+  margin: 10px 20px;
+  font-weight: 600;
+  font-size: 24px;
+}
+.leftSection i{
+  /* margin-left: -20px; */
+}
+.copy{
+  text-align: center;
+  color: #707070;
+}
+
+/* second card */
+.cardSection .row .card{
+  height: 400px;
+  width: 350px;
+  /* border: 1px solid red; */
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 10px 10px 20px #888888;
+}
+.card img{
+  width: 350px;
+  height: 180px;
+  /* border: 1px solid red; */
+  position: absolute;
+  top: 0px;
+  padding: 3px 5px;
+  margin-left: -13px;
+  border-radius: 7px 7px 0px 0px;
+}
+.readSection{
+  width: 100%;
+  height: 220px;
+  /* border: 1px solid rgb(23, 187, 56); */
+  position: absolute;
+  bottom: 0px;
+  margin-left: -13px;
+  padding: 0px 5px;
+}
+.heading{
+  color: #707070;
+  font-weight: 600;
+  font-size: 20px;
+  cursor: pointer;
+}
+.readSection a{
+  text-decoration: none;
+}
+.bodySection{
+  /* border: 1px solid black; */
+  margin-top: -10px;
+  font-weight: 550;
+  font-size: 16px;
+}
+.cardBtn{
+  border: none;
+  background: lightblue;
+  width: 100px;
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+}
